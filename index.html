@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ora Shisha & Bar — Dubai's Rooftop Nightlife Experience</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Rajdhani:wght@300;400;500;600;700&family=Orbitron:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- FIXED HEADER CONTAINER -->
+  <header id="header-fixed">
+    <!-- TOP OFFER BAR -->
+    <div class="top-bar">
+      <div class="top-bar-track">
+        <!-- Set 1 -->
+        <div class="top-bar-item">
+          <i class="fas fa-bolt"></i> SPECIAL OFFER: 20% OFF ON ALL COCKTAILS UNTIL 9PM
+        </div>
+        <div class="top-bar-item">
+          <i class="fas fa-music"></i> LIVE DJ TONIGHT FROM 10PM TILL LATE
+        </div>
+        <div class="top-bar-item">
+          <i class="fas fa-star"></i> PREMIUM SHISHA EXPERIENCE IN AL BARSHA
+        </div>
+        <!-- Set 2 -->
+        <div class="top-bar-item">
+          <i class="fas fa-bolt"></i> SPECIAL OFFER: 20% OFF ON ALL COCKTAILS UNTIL 9PM
+        </div>
+        <div class="top-bar-item">
+          <i class="fas fa-music"></i> LIVE DJ TONIGHT FROM 10PM TILL LATE
+        </div>
+        <div class="top-bar-item">
+          <i class="fas fa-star"></i> PREMIUM SHISHA EXPERIENCE IN AL BARSHA
+        </div>
+        <!-- Set 3 (Buffer) -->
+        <div class="top-bar-item">
+          <i class="fas fa-bolt"></i> SPECIAL OFFER: 20% OFF ON ALL COCKTAILS UNTIL 9PM
+        </div>
+        <div class="top-bar-item">
+          <i class="fas fa-music"></i> LIVE DJ TONIGHT FROM 10PM TILL LATE
+        </div>
+        <div class="top-bar-item">
+          <i class="fas fa-star"></i> PREMIUM SHISHA EXPERIENCE IN AL BARSHA
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav id="navbar">
+
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo">
+          <span class="logo-ora">ORA</span>
+          <span class="logo-sub">SHISHA &amp; BAR</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#offers">Offers</a></li>
+          <li><a href="#rooftop">Rooftop</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#dj">DJ Nights</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="nav-cta">Reserve</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- SCROLL PROGRESS BAR -->
+  <div id="scroll-progress"></div>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/97144084777" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="wa-pulse"></span>
+  </a>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-bg">
+      <video class="hero-video" autoplay muted loop playsinline>
+
+        <source src="./hero-bg.mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay"></div>
+      <!-- Animated neon grid -->
+      <div class="grid-overlay"></div>
+      <div class="hero-orbs">
+        <div class="orb orb1"></div>
+        <div class="orb orb2"></div>
+        <div class="orb orb3"></div>
+      </div>
+      <div class="particles" id="particles"></div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Al Barsha Dubai · Rooftop Lounge</p>
+      <h1 class="hero-title reveal">
+        Dubai's<br />
+        <span class="neon-text">Rooftop Nightlife</span><br />
+        Experience
+      </h1>
+      <p class="hero-sub reveal">DJ &nbsp;•&nbsp; Shisha &nbsp;•&nbsp; Cocktails &nbsp;•&nbsp; Rooftop Vibes</p>
+      <div class="hero-btns reveal">
+        <a href="#contact" class="btn btn-primary">
+          <i class="fas fa-calendar-check"></i> Reserve Table
+        </a>
+        <a href="tel:+97144084777" class="btn btn-secondary">
+          <i class="fas fa-phone"></i> Call Now
+        </a>
+        <a href="https://wa.me/97144084777" class="btn btn-wa" target="_blank">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-num" data-target="500">0</span><span>+</span>
+          <p>Guests Nightly</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="7">0</span>
+          <p>Nights a Week</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="50">0</span><span>+</span>
+          <p>Premium Cocktails</p>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section-about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="about-img-wrap">
+            <div class="about-img-placeholder" style="background: url('./about.jpg') center/cover;">
+              <div class="img-shimmer"></div>
+              <div class="about-tag"><i class="fas fa-star"></i> #1 Rooftop Dubai</div>
+            </div>
+
+            <div class="about-badge">
+              <span>EST.</span>
+              <span class="badge-year">2024</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <p class="section-label">About Us</p>
+          <h2 class="section-title">Welcome to <span class="neon-text">Ora</span></h2>
+          <p class="about-desc">
+            Ora Shisha &amp; Bar is a rooftop lounge in Al Barsha offering premium shisha, cocktails, and nightlife
+            experiences.
+          </p>
+          <p class="about-desc">
+            Enjoy DJ nights, rooftop atmosphere, and premium food with a relaxing lounge vibe. The perfect place to
+            enjoy Dubai nightlife with friends.
+          </p>
+          <div class="about-features">
+            <div class="feat"><i class="fas fa-music"></i><span>Live DJ Nights</span></div>
+            <div class="feat"><i class="fas fa-wind"></i><span>Premium Shisha</span></div>
+            <div class="feat"><i class="fas fa-cocktail"></i><span>Signature Cocktails</span></div>
+            <div class="feat"><i class="fas fa-city"></i><span>Dubai Skyline Views</span></div>
+          </div>
+          <a href="#contact" class="btn btn-primary mt-2">Reserve Your Table</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHAT WE OFFER ===== -->
+  <section id="offers" class="section-offers">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-label">What We Offer</p>
+        <h2 class="section-title">The Full <span class="neon-text">Experience</span></h2>
+      </div>
+      <div class="offers-grid">
+        <div class="offer-card reveal" data-delay="0">
+          <div class="offer-icon"><i class="fas fa-headphones-alt"></i></div>
+          <h3>Live DJ Nights</h3>
+          <p>Dubai's finest DJs spinning every night</p>
+          <div class="card-glow"></div>
+        </div>
+        <div class="offer-card reveal" data-delay="100">
+          <div class="offer-icon"><i class="fas fa-building"></i></div>
+          <h3>Rooftop Lounge</h3>
+          <p>Stunning views of the Dubai skyline</p>
+          <div class="card-glow"></div>
+        </div>
+        <div class="offer-card reveal" data-delay="200">
+          <div class="offer-icon"><i class="fas fa-smoking"></i></div>
+          <h3>Premium Shisha</h3>
+          <p>Curated flavors for the finest experience</p>
+          <div class="card-glow"></div>
+        </div>
+        <div class="offer-card reveal" data-delay="300">
+          <div class="offer-icon"><i class="fas fa-cocktail"></i></div>
+          <h3>Cocktails &amp; Drinks</h3>
+          <p>Handcrafted signature cocktail menu</p>
+          <div class="card-glow"></div>
+        </div>
+        <div class="offer-card reveal" data-delay="0">
+          <div class="offer-icon"><i class="fas fa-pizza-slice"></i></div>
+          <h3>Pizza</h3>
+          <p>Wood-fired artisan pizzas</p>
+          <div class="card-glow"></div>
+        </div>
+        <div class="offer-card reveal" data-delay="100">
+          <div class="offer-icon"><i class="fas fa-utensils"></i></div>
+          <h3>Shawarma</h3>
+          <p>Authentic Middle Eastern flavors</p>
+          <div class="card-glow"></div>
+        </div>
+        <div class="offer-card reveal" data-delay="200">
+          <div class="offer-icon"><i class="fas fa-hamburger"></i></div>
+          <h3>Burgers</h3>
+          <p>Gourmet burgers crafted to perfection</p>
+          <div class="card-glow"></div>
+        </div>
+        <div class="offer-card reveal" data-delay="300">
+          <div class="offer-icon"><i class="fas fa-compact-disc"></i></div>
+          <h3>Dance Floor</h3>
+          <p>State-of-the-art sound and lighting system</p>
+          <div class="card-glow"></div>
+        </div>
+        <div class="offer-card reveal" data-delay="400">
+          <div class="offer-icon"><i class="fas fa-swimming-pool"></i></div>
+          <h3>Pool Area</h3>
+          <p>Poolside lounge with premium service</p>
+          <div class="card-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ROOFTOP EXPERIENCE ===== -->
+  <section id="rooftop" class="section-rooftop">
+    <div class="rooftop-parallax">
+      <div class="rooftop-overlay"></div>
+      <div class="rooftop-content reveal">
+        <p class="section-label">The Rooftop</p>
+        <h2 class="section-title large">Under The<br /><span class="neon-text">Dubai Night Sky</span></h2>
+        <p class="rooftop-desc">
+          Enjoy stunning rooftop vibes with neon lights, music, and premium service.<br />
+          Relax with shisha or dance with our DJs under the Dubai night sky.
+        </p>
+        <div class="rooftop-badges">
+          <span><i class="fas fa-moon"></i> Open 6PM–Late</span>
+          <span><i class="fas fa-map-marker-alt"></i> Al Barsha 1</span>
+          <span><i class="fas fa-star"></i> Premium Service</span>
+        </div>
+        <a href="#contact" class="btn btn-primary">Book Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section id="gallery" class="section-gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-label">Gallery</p>
+        <h2 class="section-title">Captured <span class="neon-text">Moments</span></h2>
+      </div>
+      <div class="gallery-filter reveal">
+        <button class="gf-btn active" data-filter="all">All</button>
+        <button class="gf-btn" data-filter="dj">DJ</button>
+        <button class="gf-btn" data-filter="shisha">Shisha</button>
+        <button class="gf-btn" data-filter="cocktails">Cocktails</button>
+        <button class="gf-btn" data-filter="rooftop">Rooftop</button>
+        <button class="gf-btn" data-filter="food">Food</button>
+      </div>
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- DJ -->
+        <div class="gallery-item reveal" data-cat="dj">
+          <div class="gallery-placeholder"
+            style="background: url('https://plus.unsplash.com/premium_photo-1708589337826-af68526340e7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fGRqfGVufDB8fDB8fHww') center/cover;">
+            <div class="gp-label"><i class="fas fa-headphones-alt"></i> DJ Night</div>
+          </div>
+          <div class="gallery-overlay"><span>DJ Night</span></div>
+        </div>
+
+        <div class="gallery-item reveal large" data-cat="dj">
+          <div class="gallery-placeholder"
+            style="background: url('https://images.unsplash.com/photo-1598387181032-a3103a2db5b3?q=80&w=1000&auto=format&fit=crop') center/cover;">
+            <div class="gp-label"><i class="fas fa-music"></i> The Decks</div>
+          </div>
+          <div class="gallery-overlay"><span>The Decks</span></div>
+        </div>
+
+        <!-- Shisha -->
+        <div class="gallery-item reveal" data-cat="shisha">
+          <div class="gallery-placeholder"
+            style="background: url('https://images.unsplash.com/photo-1651565109530-9821776eff7d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHNoaXNoYXxlbnwwfHwwfHx8MA%3D%3D') center/cover;">
+            <div class="gp-label"><i class="fas fa-smoking"></i> Premium Shisha</div>
+          </div>
+          <div class="gallery-overlay"><span>Premium Shisha</span></div>
+        </div>
+
+        <div class="gallery-item reveal tall" data-cat="shisha">
+          <div class="gallery-placeholder"
+            style="background: url('https://images.unsplash.com/photo-1543868519-0e147b44e366?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHNtb2tlJTIwYW5kJTIwdmliZXxlbnwwfHwwfHx8MA%3D%3D') center/cover;">
+            <div class="gp-label"><i class="fas fa-wind"></i> Smoke &amp; Vibes</div>
+          </div>
+          <div class="gallery-overlay"><span>Smoke &amp; Vibes</span></div>
+        </div>
+
+        <!-- Cocktails -->
+        <div class="gallery-item reveal" data-cat="cocktails">
+          <div class="gallery-placeholder"
+            style="background: url('https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y29ja3RhaWx8ZW58MHx8MHx8fDA%3D') center/cover;">
+            <div class="gp-label"><i class="fas fa-cocktail"></i> Signature Cocktails</div>
+          </div>
+          <div class="gallery-overlay"><span>Signature Cocktails</span></div>
+        </div>
+
+        <div class="gallery-item reveal" data-cat="cocktails">
+          <div class="gallery-placeholder"
+            style="background: url('https://images.unsplash.com/photo-1536935338788-846bb9981813?q=80&w=1000&auto=format&fit=crop') center/cover;">
+            <div class="gp-label"><i class="fas fa-glass-martini-alt"></i> Neon Sips</div>
+          </div>
+          <div class="gallery-overlay"><span>Neon Sips</span></div>
+        </div>
+
+        <!-- Rooftop -->
+        <div class="gallery-item reveal large" data-cat="rooftop">
+          <div class="gallery-placeholder"
+            style="background: url('https://images.unsplash.com/photo-1758165532022-a68f291317ba?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTJ8fHJvb2Z0b3AlMjBiYXJ8ZW58MHx8MHx8fDA%3D') center/cover;">
+            <div class="gp-label"><i class="fas fa-city"></i> Rooftop Views</div>
+          </div>
+          <div class="gallery-overlay"><span>Rooftop Views</span></div>
+        </div>
+
+        <div class="gallery-item reveal" data-cat="rooftop">
+          <div class="gallery-placeholder"
+            style="background: url('https://images.unsplash.com/photo-1541336032412-2048a678540d?q=80&w=1000&auto=format&fit=crop') center/cover;">
+            <div class="gp-label"><i class="fas fa-star"></i> Night Sky</div>
+          </div>
+          <div class="gallery-overlay"><span>Night Sky</span></div>
+        </div>
+
+        <!-- Food -->
+        <div class="gallery-item reveal" data-cat="food">
+          <div class="gallery-placeholder"
+            style="background: url('https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1000&auto=format&fit=crop') center/cover;">
+            <div class="gp-label"><i class="fas fa-pizza-slice"></i> Artisan Pizza</div>
+          </div>
+          <div class="gallery-overlay"><span>Artisan Pizza</span></div>
+        </div>
+
+        <div class="gallery-item reveal" data-cat="food">
+          <div class="gallery-placeholder"
+            style="background: url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1000&auto=format&fit=crop') center/cover;">
+            <div class="gp-label"><i class="fas fa-hamburger"></i> Gourmet Burgers</div>
+          </div>
+          <div class="gallery-overlay"><span>Gourmet Burgers</span></div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <button class="lb-close" id="lbClose"><i class="fas fa-times"></i></button>
+      <div class="lb-content" id="lbContent"></div>
+    </div>
+  </section>
+
+  <!-- ===== DJ NIGHTS ===== -->
+  <section id="dj" class="section-dj">
+    <div class="dj-bg">
+      <div class="dj-beams">
+        <div class="beam b1"></div>
+        <div class="beam b2"></div>
+        <div class="beam b3"></div>
+        <div class="beam b4"></div>
+        <div class="beam b5"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="dj-inner reveal">
+        <p class="section-label">Every Night</p>
+        <h2 class="section-title">Weekly <span class="neon-text">DJ Events</span></h2>
+        <p class="dj-desc">
+          Dance all night with Dubai's best DJs and enjoy the ultimate rooftop party experience.
+        </p>
+        <!-- Equalizer animation -->
+        <div class="equalizer">
+          <div class="eq-bar"></div>
+          <div class="eq-bar"></div>
+          <div class="eq-bar"></div>
+          <div class="eq-bar"></div>
+          <div class="eq-bar"></div>
+          <div class="eq-bar"></div>
+          <div class="eq-bar"></div>
+          <div class="eq-bar"></div>
+          <div class="eq-bar"></div>
+          <div class="eq-bar"></div>
+          <div class="eq-bar"></div>
+          <div class="eq-bar"></div>
+          <div class="eq-bar"></div>
+          <div class="eq-bar"></div>
+          <div class="eq-bar"></div>
+          <div class="eq-bar"></div>
+          <div class="eq-bar"></div>
+          <div class="eq-bar"></div>
+          <div class="eq-bar"></div>
+          <div class="eq-bar"></div>
+        </div>
+        <div class="dj-schedule">
+          <div class="dj-day">
+            <span class="day-name">MON – WED</span>
+            <span class="day-type">Chill Vibes</span>
+            <span class="day-time">9PM – 2AM</span>
+          </div>
+          <div class="dj-day featured">
+            <div class="feat-badge">HOT</div>
+            <span class="day-name">THU – SAT</span>
+            <span class="day-type">Full Party Night</span>
+            <span class="day-time">9PM – 4AM</span>
+          </div>
+          <div class="dj-day">
+            <span class="day-name">SUNDAY</span>
+            <span class="day-type">Sunset Sessions</span>
+            <span class="day-time">6PM – 12AM</span>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn-primary">Book VIP Table</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MENU PREVIEW ===== -->
+  <section id="menu" class="section-menu">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-label">Our Menu</p>
+        <h2 class="section-title">Taste the <span class="neon-text">Night</span></h2>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-card reveal" data-delay="0">
+          <div class="menu-card-top cocktail-bg"
+            style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://plus.unsplash.com/premium_photo-1661344206906-ea0b40c65d15?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover;">
+            <i class="fas fa-cocktail menu-icon"></i>
+            <h3>Cocktails</h3>
+          </div>
+
+          <ul class="menu-items">
+            <li><span>Ora Signature</span></li>
+            <li><span>Blue Lagoon Rooftop</span></li>
+            <li><span>Neon Negroni</span></li>
+            <li><span>Dubai Sling</span></li>
+          </ul>
+        </div>
+        <div class="menu-card reveal" data-delay="100">
+          <div class="menu-card-top pizza-bg"
+            style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=2000&auto=format&fit=crop') center/cover;">
+            <i class="fas fa-pizza-slice menu-icon"></i>
+            <h3>Pizza</h3>
+          </div>
+          <ul class="menu-items">
+            <li><span>Margherita Classic</span></li>
+            <li><span>BBQ Chicken</span></li>
+            <li><span>Four Cheese</span></li>
+            <li><span>Truffle Mushroom</span></li>
+          </ul>
+        </div>
+        <div class="menu-card reveal" data-delay="200">
+          <div class="menu-card-top shawarma-bg"
+            style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1583060095186-852adde6b819?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c2hhd2FybWF8ZW58MHx8MHx8fDA%3D') center/cover;">
+            <i class="fas fa-utensils menu-icon"></i>
+            <h3>Shawarma</h3>
+          </div>
+
+          <ul class="menu-items">
+            <li><span>Classic Chicken</span></li>
+            <li><span>Beef &amp; Lamb</span></li>
+            <li><span>Mixed Grill Wrap</span></li>
+            <li><span>ORA Special</span></li>
+          </ul>
+        </div>
+        <div class="menu-card reveal" data-delay="300">
+          <div class="menu-card-top burger-bg"
+            style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=2000&auto=format&fit=crop') center/cover;">
+            <i class="fas fa-hamburger menu-icon"></i>
+            <h3>Burgers</h3>
+          </div>
+          <ul class="menu-items">
+            <li><span>Ora Smash Burger</span></li>
+            <li><span>Truffle &amp; Brie</span></li>
+            <li><span>Crispy Chicken</span></li>
+            <li><span>Wagyu Beef</span></li>
+          </ul>
+        </div>
+        <div class="menu-card reveal" data-delay="400">
+          <div class="menu-card-top shisha-bg"
+            style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1651565109530-9821776eff7d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHNoaXNoYXxlbnwwfHwwfHx8MA%3D%3D') center/cover;">
+            <i class="fas fa-smoking menu-icon"></i>
+            <h3>Shisha</h3>
+          </div>
+
+          <ul class="menu-items">
+            <li><span>Double Apple</span></li>
+            <li><span>Blue Mist</span></li>
+            <li><span>Grape Mint</span></li>
+            <li><span>Ora Special Mix</span></li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="menu-cta reveal">
+        <a href="#contact" class="btn btn-primary">View Full Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MAP ===== -->
+  <section id="map" class="section-map">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-label">Find Us</p>
+        <h2 class="section-title">Our <span class="neon-text">Location</span></h2>
+      </div>
+      <div class="map-wrap reveal">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.1234!2d55.2016!3d25.1103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69d29c91f37d%3A0x0!2sCassells+Al+Barsha+Hotel!5e0!3m2!1sen!2sae!4v1700000000"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" title="Ora Shisha & Bar Location">
+        </iframe>
+        <div class="map-card">
+          <i class="fas fa-map-marker-alt map-icon"></i>
+          <div>
+            <h4>Ora Shisha &amp; Bar</h4>
+            <p>Cassells Al Barsha Hotel</p>
+            <p>Al Barsha 1, Dubai, UAE</p>
+            <p class="map-hours"><i class="fas fa-clock"></i> Open Daily 6PM – Late</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section-contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-label">Get In Touch</p>
+        <h2 class="section-title">Reserve Your <span class="neon-text">Experience</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <h4>Call Us</h4>
+              <p>04 408 4777</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon wa-icon"><i class="fab fa-whatsapp"></i></div>
+            <div>
+              <h4>WhatsApp</h4>
+              <p>+971 44 08 4777</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Location</h4>
+              <p>Cassells Al Barsha Hotel, Dubai</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <h4>Hours</h4>
+              <p>Open Daily · 6PM till Late</p>
+            </div>
+          </div>
+          <div class="contact-btns">
+            <a href="tel:+97144084777" class="btn btn-primary"><i class="fas fa-phone"></i> Call Now</a>
+            <a href="https://wa.me/97144084777" class="btn btn-wa" target="_blank"><i class="fab fa-whatsapp"></i>
+              WhatsApp</a>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="reserveForm">
+          <h3>Reserve a Table</h3>
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="tel" placeholder="Phone Number" required />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <input type="date" required />
+            </div>
+            <div class="form-group">
+              <input type="time" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <select>
+              <option value="">Number of Guests</option>
+              <option>2 Guests</option>
+              <option>4 Guests</option>
+              <option>6 Guests</option>
+              <option>8+ Guests (VIP)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Special requests..." rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full">
+            <i class="fas fa-calendar-check"></i> Confirm Reservation
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer">
+    <div class="footer-glow"></div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-ora">ORA</span>
+            <span class="logo-sub">SHISHA &amp; BAR</span>
+          </div>
+          <p>Dubai's premier rooftop nightlife destination. DJ nights, premium shisha, and signature cocktails above
+            Al
+            Barsha.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon tiktok" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#offers">Experience</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#dj">DJ Nights</a></li>
+            <li><a href="#menu">Menu</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-info">
+          <h4>Visit Us</h4>
+          <p><i class="fas fa-map-marker-alt"></i> Cassells Al Barsha Hotel<br />Al Barsha 1, Dubai, UAE</p>
+          <p><i class="fas fa-phone"></i> 04 408 4777</p>
+          <p><i class="fas fa-clock"></i> Open Daily · 6PM till Late</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Ora Shisha &amp; Bar. All rights reserved.</p>
+        <p>Rooftop Lounge · Al Barsha Dubai</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast">
+    <i class="fas fa-check-circle"></i>
+    <span>Reservation request sent! We'll call you shortly.</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
