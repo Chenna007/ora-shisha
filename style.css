@@ -600,12 +600,18 @@ img {
   inset: 0;
 }
 
+.particle {
+  pointer-events: none;
+}
+
 .orb {
   position: absolute;
   border-radius: 50%;
-  filter: blur(80px);
+  filter: blur(60px);
+  /* Reduced from 80px for better performance */
   opacity: 0.35;
   animation: orbFloat 8s ease-in-out infinite;
+  will-change: transform;
 }
 
 .orb1 {

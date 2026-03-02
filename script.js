@@ -43,10 +43,20 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ─── STICKY HEADER ─── */
   const headerFixed = document.getElementById('header-fixed');
   const navbar = document.getElementById('navbar');
+  let lastScrollY = 0;
+  let ticking = false;
+
   window.addEventListener('scroll', () => {
-    const isScrolled = window.scrollY > 60;
-    headerFixed.classList.toggle('scrolled', isScrolled);
-    navbar.classList.toggle('scrolled', isScrolled);
+    lastScrollY = window.scrollY;
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        const isScrolled = lastScrollY > 60;
+        headerFixed.classList.toggle('scrolled', isScrolled);
+        navbar.classList.toggle('scrolled', isScrolled);
+        ticking = false;
+      });
+      ticking = true;
+    }
   }, { passive: true });
 
 
@@ -103,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ─── PARTICLE SYSTEM (hero) ─── */
   const particleContainer = document.getElementById('particles');
-  const PARTICLE_COUNT = 60;
+  const PARTICLE_COUNT = 40; // Reduced from 60 to improve performance
   const particles = [];
 
   for (let i = 0; i < PARTICLE_COUNT; i++) {
@@ -111,22 +121,24 @@ document.addEventListener('DOMContentLoaded', () => {
     const size = Math.random() * 3 + 1;
     const colors = ['#00d4ff', '#a855f7', '#f72585', '#06ffd6'];
     const color = colors[Math.floor(Math.random() * colors.length)];
+    p.className = 'particle';
     p.style.cssText = `
       position: absolute;
       width: ${size}px;
       height: ${size}px;
       border-radius: 50%;
       background: ${color};
-      left: ${Math.random() * 100}%;
-      top: ${Math.random() * 100}%;
+      left: 0;
+      top: 0;
       opacity: ${Math.random() * 0.6 + 0.1};
       box-shadow: 0 0 ${size * 3}px ${color};
+      will-change: transform, opacity;
     `;
     particleContainer.appendChild(p);
     particles.push({
       el: p,
-      x: parseFloat(p.style.left),
-      y: parseFloat(p.style.top),
+      x: Math.random() * 100,
+      y: Math.random() * 100,
       vx: (Math.random() - 0.5) * 0.03,
       vy: (Math.random() - 0.5) * 0.03,
       opacity: parseFloat(p.style.opacity),
@@ -135,19 +147,24 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function animateParticles() {
-    particles.forEach(p => {
+    for (let i = 0; i < particles.length; i++) {
+      const p = particles[i];
       p.x += p.vx;
       p.y += p.vy;
+
       if (p.x < 0) p.x = 100;
-      if (p.x > 100) p.x = 0;
+      else if (p.x > 100) p.x = 0;
+
       if (p.y < 0) p.y = 100;
-      if (p.y > 100) p.y = 0;
+      else if (p.y > 100) p.y = 0;
+
       p.opacity += p.opacityDir * 0.005;
       if (p.opacity > 0.7 || p.opacity < 0.05) p.opacityDir *= -1;
-      p.el.style.left = p.x + '%';
-      p.el.style.top = p.y + '%';
+
+      // Use translate3d for GPU acceleration
+      p.el.style.transform = `translate3d(${p.x}vw, ${p.y}vh, 0)`;
       p.el.style.opacity = p.opacity;
-    });
+    }
     requestAnimationFrame(animateParticles);
   }
   animateParticles();
